@@ -2,13 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #FFF8F3;
+  background-color: #fff8f3;
   font-family: "Plus Jakarta Sans";
 }
 header {
   width: 100%;
   padding: 32px 0;
-  box-shadow: 0px 1px 4px  gray;
+  box-shadow: 0px 1px 4px gray;
 }
 .container {
   width: 100%;
@@ -49,7 +49,11 @@ ul :first-child {
   font-size: 14px;
   font-weight: 600;
 }
-.container button {
+.Buttons {
+  display: flex;
+  gap: 15px;
+}
+.container .btn-visit {
   padding: 10px 24px;
   background-color: #2b1b17;
   color: white;
@@ -57,7 +61,24 @@ ul :first-child {
   border: none;
   transition: 300ms ease-in-out;
 }
+.btn-menu {
+  display: none;
+}
 .container button:hover {
   background-color: #ac6d58;
 }
 /* End NavBar  */
+/* Start Responsive Navbar  */
+@media (max-width: 800px) {
+  ul,
+  .logo img {
+    display: none;
+  }
+  .container p {
+    font-size: 20px;
+  }
+  .btn-menu {
+    display: block;
+    border: none;
+  }
+}
