@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FFF8F3;
+  font-family: "Plus Jakarta Sans";
+}
+header {
+  width: 100%;
+  padding: 32px 0;
+  box-shadow: 0px 1px 4px  gray;
+}
+.container {
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+.container p {
+  font-size: 28px;
+  font-weight: 600;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+}
+ul {
+  display: flex;
+  gap: 32px;
+}
+ul li {
+  list-style: none;
+  color: #4f4442;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms;
+}
+ul li:hover {
+  color: #845326;
+  border-bottom: 1px #845326 solid;
+}
+ul :first-child {
+  border-bottom: 1px #845326 solid;
+  list-style: none;
+  color: #845326;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container button {
+  padding: 10px 24px;
+  background-color: #2b1b17;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  transition: 300ms ease-in-out;
+}
+.container button:hover {
+  background-color: #ac6d58;
+}
+/* End NavBar  */
